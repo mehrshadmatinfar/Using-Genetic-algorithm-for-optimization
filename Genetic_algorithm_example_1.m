@@ -12,3 +12,6 @@ ub = 80;    %uper band
 
 xx = lb:ub;
 Fitness_function = @(x) x.^4 - 50*x.^3 - 1800*x.^2 - 800*x;
+
+plot(xx, Fitness_function(xx))
+grid on
