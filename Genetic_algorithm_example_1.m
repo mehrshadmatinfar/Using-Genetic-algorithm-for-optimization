@@ -18,5 +18,8 @@ grid on
 
 %% Genetic algorithm function
 xopt = ga(Fitness_function, 1);
-% we use 1 because it has only "x" as variable
+% we use 1 because our Fitness_function has only "x" as variable
 yopt = Fitness_function(xopt);
+
+hold on
+plot(xopt, yopt, 'o')
