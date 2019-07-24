@@ -6,3 +6,16 @@
 clc
 clear
 close all
+
+%% Introduc a function
+lower_bound = [0;
+               0];
+upper_bound = [200;
+               200];
+
+A_Inequalities = [1/3, 1;
+                  0.1, -1];
+b_Inequalities = [4.5;
+                  0 ];
+
+Fitness_function = @(x) (-8+x(1))^2 + (-2+x(2))^2;
