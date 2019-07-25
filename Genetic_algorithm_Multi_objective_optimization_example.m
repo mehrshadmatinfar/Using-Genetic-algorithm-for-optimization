@@ -22,3 +22,6 @@ b_Inequalities = [];
     number_of_variable, A_Inequalities, b_Inequalities, [], [], ...
     lower_bound, upper_bound, ...
     @Genetic_algorithm_Multi_objective_optimization_example_NC)
+
+%% plot
+plot(yopt(:, 1), yopt(:, 2), '*')
