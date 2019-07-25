@@ -20,3 +20,9 @@ A_Inequalities = [];
 b_Inequalities = [];
 
 Fitness_function = @(x) (-100 - (x(1)-5)^2 - (x(2)-5)^2 + (x(3)-5)^2)/100;
+
+%% Genetic algorithm function
+
+[xopt, yopt] = ga(Fitness_function, number_of_variable, A_Inequalities, ...
+    b_Inequalities, [], [], lower_bound, upper_bound, ...
+    @nonlinear_constraints_1)
